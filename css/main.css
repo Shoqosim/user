@@ -1,0 +1,389 @@
+
+
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/mulish-v10-latin-regular.eot'); 
+    src: local(''),
+         url('../fonts/mulish-v10-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/mulish-v10-latin-regular.woff2') format('woff2'),
+         url('../fonts/mulish-v10-latin-regular.woff') format('woff'), 
+         url('../fonts/mulish-v10-latin-regular.ttf') format('truetype'), 
+         url('../fonts/mulish-v10-latin-regular.svg#Mulish') format('svg'); 
+  }
+  
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/mulish-v10-latin-500.eot'); 
+    src: local(''),
+         url('../fonts/mulish-v10-latin-500.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/mulish-v10-latin-500.woff2') format('woff2'),
+         url('../fonts/mulish-v10-latin-500.woff') format('woff'), 
+         url('../fonts/mulish-v10-latin-500.ttf') format('truetype'), 
+         url('../fonts/mulish-v10-latin-500.svg#Mulish') format('svg'); 
+  }
+  
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/mulish-v10-latin-700.eot'); 
+    src: local(''),
+         url('../fonts/mulish-v10-latin-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/mulish-v10-latin-700.woff2') format('woff2'),
+         url('../fonts/mulish-v10-latin-700.woff') format('woff'), 
+         url('../fonts/mulish-v10-latin-700.ttf') format('truetype'), 
+         url('../fonts/mulish-v10-latin-700.svg#Mulish') format('svg'); 
+  }
+
+
+body{
+    font-family: 'mulish', sans-serif;
+    background-color: rgb(5, 1, 37);
+}
+
+
+/*================ form page =============== */
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.login_container{
+    width: 314px;
+    margin:0 auto ;
+    margin-top: 200px;
+    font-size: 20px;
+    padding: 80px;
+    box-shadow: black 0px 22px 70px 0px;
+}
+
+
+.login_headding{
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color:chocolate;
+    text-align: center;
+}
+
+.username_input,.password_input{
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.button{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    border: none;
+    padding: 5px;
+    background-color:white;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.button:active{
+    background-color:rgb(187, 93, 62);
+    color: white;
+}
+
+/*================= users page ============= */
+
+.users_headding{
+    color: aquamarine;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.users_container{
+    width: 1140px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+
+
+    .users_list::-webkit-scrollbar {
+        width: 7px;
+        height: 10px;
+    }
+    
+    
+    .users_list::-webkit-scrollbar-thumb {
+        background-color:aquamarine; 
+        border-radius: 10px;
+    }
+
+
+.users_list{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    height: 550px;
+    overflow: auto;
+}
+.users_item{
+    display: flex; 
+    justify-content:space-between;
+    /* align-items: center; */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:rgb(23, 32, 61);
+    box-shadow: rgba(12, 12, 11, 0.2) 0px 8px 24px;
+}
+
+.users_info{
+    display: flex;
+}
+
+.users_info{
+    margin: 0;
+    padding: 0;
+}
+
+.line{
+    display: block;
+    width: 5px;
+    height: 230px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.user_username{
+    margin: 0;
+    margin-bottom: 8px;
+    color: white;
+    padding: 0;
+    padding: 5px 15px;
+    background-color:rgb(10, 14, 49);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.user_name{
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.users_address{
+    margin: 0;
+    padding:0;
+    margin-bottom:8px ;
+    font-size: 14px;
+    color:darkgreen ;
+    font-weight: 500;
+}
+
+.user_company-name ,.user_company-bs ,.user_company-catchPhrase{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: blueviolet;
+}
+
+.user_email{
+    margin-bottom: 10px;
+    color: rgb(12, 155, 88);
+}
+
+.number{
+    margin: 0;
+    padding: 0 14px;   
+    font-size: 40px;
+    height: 55px;
+    background-color: rgb(5, 1, 37);
+    color: aquamarine;
+    
+}
+
+.users_tel-number{
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.post_button{
+    border: none;
+    color: white;
+    background-color: rgb(5, 1, 37);
+    padding: 7px 10px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.post_button:active{
+    color: black;
+    font-weight: 600;
+    background-color: rgb(45, 45, 126);
+}
+
+/*================ posts page ============= */
+
+.previous_image{
+    position: fixed;
+    top: 13px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.posts_headding{
+    color: aquamarine;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.posts_container{
+    width: 1140px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.posts_list{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    height: 550px;
+    overflow: auto;
+}
+
+.posts_list::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+}
+
+
+.posts_list::-webkit-scrollbar-thumb {
+    background-color:aquamarine; 
+    border-radius: 10px;}
+
+.posts_item{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:rgb(23, 32, 61);
+    box-shadow: rgba(12, 12, 11, 0.2) 0px 8px 24px;
+}
+
+.users_posts-headding{
+    margin: 0;
+    margin-bottom: 8px;
+    color: white;
+    padding: 0;
+    padding: 5px 15px;
+    background-color:rgb(10, 14, 49);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.users_posts-desc{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    color: darkgreen;
+}
+
+.comments_button{
+    border: none;
+    color: white;
+    background-color: rgb(5, 1, 37);
+    padding: 7px 10px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.comments_button:active{
+    color: black;
+    font-weight: 600;
+    background-color: rgb(45, 45, 126);
+}
+
+/*=========== comments page ======== */
+
+.comments_headding{
+    color: aquamarine;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.comments_container{
+    width: 1140px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.comments_list{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+.comments_item{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:rgb(23, 32, 61);
+    box-shadow: rgba(12, 12, 11, 0.2) 0px 8px 24px;
+}    
+
+.users_comments-headding{
+    margin: 0;
+    margin-bottom: 8px;
+    color: white;
+    padding: 0;
+    padding: 5px 15px;
+    background-color:rgb(10, 14, 49);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.users_email{
+    margin-bottom: 8px;
+    /* text-decoration: none; */
+    margin-bottom: 10px;
+    color: rgb(12, 155, 88);
+}
+.users_comments-desc{
+    margin: 0;
+    padding: 0;
+    color: darkgreen;
+}
+
+.log_out{
+    padding: 10px 20px;
+    margin-top: 8px;
+    background-color:rgb(8, 141, 59) ;
+    border: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.log_out:active{
+    background-color:blueviolet  ;
+    color: aliceblue;
+}
