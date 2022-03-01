@@ -4,7 +4,7 @@
 const token = window.localStorage.getItem('token');
 
 if(!token){
-    window.location.replace('login.html')
+    window.location.replace('index.html')
 }
 
 // calling the HTML document elements 
@@ -47,6 +47,7 @@ const renderComments = (arr,node)=>{
     node.appendChild(commentFragmet);
 }
 
+// this code is fetch comments entpoint
 fetch('https://jsonplaceholder.typicode.com/comments?postId='+ commentId)
 .then((response)=>response.json())
 .then((data)=>{
@@ -64,6 +65,6 @@ elCommentsLogOut.addEventListener('click',(evt)=>{
     evt.preventDefault();
     if(evt.target.matches('.log_out')){
         window.localStorage.removeItem('.token')
-        window.location.replace('login.html')
+        window.location.replace('index.html')
     }
 })

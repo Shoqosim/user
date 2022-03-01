@@ -2,7 +2,7 @@
 const token = window.localStorage.getItem('token');
 
 if(!token){
-    window.location.replace('login.html')
+    window.location.replace('index.html')
 }
 
 
@@ -85,6 +85,6 @@ elPostsLogOut.addEventListener('click',(evt)=>{
     evt.preventDefault();
     if(evt.target.matches('.log_out')){
         window.localStorage.removeItem('.token')
-        window.location.replace('login.html')
+        window.location.replace('index.html')
     }
 })

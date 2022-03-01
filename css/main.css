@@ -138,7 +138,6 @@ div{
 .users_item{
     display: flex; 
     justify-content:space-between;
-    /* align-items: center; */
     padding: 20px;
     box-sizing: border-box;
     background-color:rgb(23, 32, 61);
@@ -278,6 +277,7 @@ div{
     border-radius: 10px;}
 
 .posts_item{
+    /* position: absolute; */
     padding: 20px;
     box-sizing: border-box;
     background-color:rgb(23, 32, 61);
@@ -375,7 +375,7 @@ div{
 .log_out{
     padding: 10px 20px;
     margin-top: 8px;
-    background-color:rgb(8, 141, 59) ;
+    background-color:rgb(68, 11, 53) ;
     border: none;
     color: black;
     font-weight: 600;
